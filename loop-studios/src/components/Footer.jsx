@@ -16,14 +16,13 @@ const Footer = () => {
     <>
       
 
-      <div className='bg-black w-full px-32 mt-20 py-16'>
-        <footer className='flex flex-col sm:flex-row justify-between items-center'>
-          <div>
+      <div className='bg-black w-full px-6 sm:px-16 lg:px-32 mt-20 py-16'>
+        <footer className='lg:flex flex-col sm:flex-row justify-between items-center sm:items-start gap-10'>
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-6">
             <img src={logo} alt="" />
-            <ul className=" hidden sm:flex list-none gap-6 josefin-sans-300 text-white font-bold">
+            <ul className="flex flex-col sm:flex-row gap-4 sm:gap-6 josefin-sans-300 text-white font-bold mt-6 sm:mt-0">
         {footerLinks.map((link, index) => (
-    <li key={index} className="inline cursor-pointer capitalize hover:underline hover:decoration-2 hover:underline-offset-4"
->
+          <li key={index} className="inline cursor-pointer capitalize hover:underline hover:decoration-2 hover:underline-offset-4">
         {link}
     </li>
 ))}
